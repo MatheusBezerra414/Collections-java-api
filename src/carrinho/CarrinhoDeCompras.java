@@ -21,13 +21,11 @@ public class CarrinhoDeCompras {
     }
     // Calcula e retorna o valor total do carrinho, levando em consideração o preço e a quantidade de cada item.
     public double calcularValorTotal(){
-        int quantidadeTotal = 0;
-        double precoTotal = 0;
+        double valorTotal = 0;
         for (Item i : itemList) {
-            quantidadeTotal += i.getQuantidade();
-            precoTotal += i.getPreco();
+           valorTotal += i.getQuantidade() * i.getPreco();
         }
-        return quantidadeTotal * precoTotal;
+        return valorTotal;
     }
     // Exibe todos os itens presentes no carrinho, mostrando seus nomes, preços e quantidades.
     public void exibirItens(){
