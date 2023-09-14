@@ -1,5 +1,6 @@
 package carrinho;
 
+
 public class Item {
     private String nome;
     private double preco;
@@ -22,7 +23,7 @@ public class Item {
     }
     @Override
     public String toString(){
-        return  String.format("Nome: %s \nPreco: %.2f \nQuantidade: %d", nome, preco, quantidade);
+        return  String.format("\nNome: %s, Preco: %.2f, Quantidade: %d", nome, preco, quantidade);
     }
 
 }
